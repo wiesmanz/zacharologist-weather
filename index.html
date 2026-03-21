@@ -4,30 +4,30 @@
 <title>Zacharologist Wx Page</title>
 <style>
 body {
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:#e5e5e5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e5e5e5;
 }
 
 header {
-  background:#d9d9d9;
-  padding:10px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  background: #d9d9d9;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-  margin:0;
-  font-size:26px;
-  font-weight:bold;
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 nav a {
-  margin-left:20px;
-  text-decoration:none;
-  color:black;
-  font-size:20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 .hero {
@@ -39,6 +39,7 @@ nav a {
   width: 100%;
   height: 700px;
   object-fit: cover;
+  display: block;
 }
 
 .hero::after {
@@ -61,34 +62,6 @@ nav a {
   width: 80%;
   z-index: 2;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
-  padding: 40px;
-}
-
-.card {
-  background: #1b2735;
-  padding: 20px;
-  border-radius: 12px;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-.card:hover {
-  background: #22324d;
-}
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  width: 80%;
-}
 
 .overlay h2 {
   font-size: 42px;
@@ -110,6 +83,25 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: #1b2735;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: #22324d;
 }
 </style>
 </head>
@@ -117,15 +109,15 @@ nav a {
 <body>
 
 <header>
-<h1>Zacharologist Wx Page</h1>
-<nav>
-<a href="#">Home</a>
-<a href="#">Wx Updates</a>
-<a href="#">Maps & Models</a>
-</nav>
+  <h1>Zacharologist Wx Page</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Wx Updates</a>
+    <a href="#">Maps &amp; Models</a>
+  </nav>
 </header>
 
- <div class="hero">
+<div class="hero">
   <img src="hero.jpg" alt="Weather collage">
 
   <div class="overlay">
@@ -133,23 +125,24 @@ nav a {
     <p>Storms, forecasts, sky, and live weather tools.</p>
     <a class="button" href="#">GET STARTED</a>
   </div>
-   <div class="grid">
-
-<a class="card" href="https://www.weather.gov/" target="_blank">
-<h2>NWS Hazards</h2>
-<p>Official alerts and warnings</p>
-</a>
-
-<a class="card" href="https://www.spc.noaa.gov/" target="_blank">
-<h2>SPC Outlook</h2>
-<p>Storm Prediction Center forecasts</p>
-</a>
-
-<a class="card" href="https://radar.weather.gov/" target="_blank">
-<h2>Radar</h2>
-<p>Live radar viewer</p>
-</a>
-
 </div>
+
+<div class="grid">
+  <a class="card" href="https://www.weather.gov/" target="_blank">
+    <h2>NWS Hazards</h2>
+    <p>Official alerts and warnings</p>
+  </a>
+
+  <a class="card" href="https://www.spc.noaa.gov/" target="_blank">
+    <h2>SPC Outlook</h2>
+    <p>Storm Prediction Center forecasts</p>
+  </a>
+
+  <a class="card" href="https://radar.weather.gov/" target="_blank">
+    <h2>Radar</h2>
+    <p>Live radar viewer</p>
+  </a>
 </div>
+
+</body>
 </html>
